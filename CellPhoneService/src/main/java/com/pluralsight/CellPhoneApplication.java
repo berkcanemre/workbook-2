@@ -42,14 +42,21 @@ public class CellPhoneApplication {
 
         System.out.print("Please input the second owner of the phone? ");
         cellPhone2.setOwner(scanner.nextLine());
+
+//CellPhone Class 3
+        CellPhone cellPhone3 = new CellPhone(3337777, "Pixel 8", "Google Fi", "555-333-8888", "Taylor");
+
 //Display
         System.out.println("\nDisplaying Phones:\n");
         display(cellPhone1);
         display(cellPhone2);
+        display(cellPhone3);
 //Dial
         System.out.println("\nDialing each other:\n");
         cellPhone1.dial(cellPhone2.getPhoneNumber());
         cellPhone2.dial(cellPhone1.getPhoneNumber());
+        cellPhone1.dial(cellPhone3.getPhoneNumber());
+        cellPhone3.dial(cellPhone2.getPhoneNumber());
 
         scanner.close();
     }
@@ -63,4 +70,5 @@ public static void display(CellPhone phone) {
     System.out.println("Serial Number: " + phone.getSerialNumber());
     System.out.println("----------------------");
     }
+
 }
