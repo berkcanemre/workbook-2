@@ -1,0 +1,47 @@
+Index: src/main/java/com/pluralsight/CellPhone.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.pluralsight;\r\n\r\npublic class CellPhone {\r\n    private int serialNumber;\r\n    private String model;\r\n    private String carrier;\r\n    private String phoneNumber;\r\n    private String owner;\r\n\r\n    // Parameterless Constructor with default values\r\n    public CellPhone() {\r\n        this.serialNumber = 0;\r\n        this.model = \"\";\r\n        this.carrier = \"\";\r\n        this.phoneNumber = \"\";\r\n        this.owner = \"\";\r\n    }\r\n\r\n    // Getters\r\n    public int getSerialNumber() {\r\n        return serialNumber;\r\n    }\r\n\r\n    public String getModel() {\r\n        return model;\r\n    }\r\n\r\n    public String getCarrier() {\r\n        return carrier;\r\n    }\r\n\r\n    public String getPhoneNumber() {\r\n        return phoneNumber;\r\n    }\r\n\r\n    public String getOwner() {\r\n        return owner;\r\n    }\r\n\r\n    // Setters\r\n    public void setSerialNumber(int serialNumber) {\r\n        this.serialNumber = serialNumber;\r\n    }\r\n\r\n    public void setModel(String model) {\r\n        this.model = model;\r\n    }\r\n\r\n    public void setCarrier(String carrier) {\r\n        this.carrier = carrier;\r\n    }\r\n\r\n    public void setPhoneNumber(String phoneNumber) {\r\n        this.phoneNumber = phoneNumber;\r\n    }\r\n\r\n    public void setOwner(String owner) {\r\n        this.owner = owner;\r\n\r\n    }\r\n\r\n    // Dial() method\r\n    public void dial(String phoneNumber) {\r\n        System.out.println(owner + \"'s phone is calling \" + phoneNumber);\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/pluralsight/CellPhone.java b/src/main/java/com/pluralsight/CellPhone.java
+--- a/src/main/java/com/pluralsight/CellPhone.java	(revision 783f964eb8b1a1d32a1091a61a70eda1fcb26e18)
++++ b/src/main/java/com/pluralsight/CellPhone.java	(date 1744901973408)
+@@ -7,7 +7,9 @@
+     private String phoneNumber;
+     private String owner;
+ 
++
+     // Parameterless Constructor with default values
++
+     public CellPhone() {
+         this.serialNumber = 0;
+         this.model = "";
+@@ -15,8 +17,9 @@
+         this.phoneNumber = "";
+         this.owner = "";
+     }
+-
++    
+     // Getters
++
+     public int getSerialNumber() {
+         return serialNumber;
+     }
+@@ -36,8 +39,9 @@
+     public String getOwner() {
+         return owner;
+     }
+-
++    
+     // Setters
++
+     public void setSerialNumber(int serialNumber) {
+         this.serialNumber = serialNumber;
+     }
+@@ -64,3 +68,4 @@
+         System.out.println(owner + "'s phone is calling " + phoneNumber);
+     }
+ }
++
